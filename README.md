@@ -59,6 +59,48 @@ I specialize in creating **intuitive, responsive, and performance-oriented appli
 
 ---
 
+<h3 align="left">🚀 Proyectos con Astro</h3>
+
+<p align="left">
+🌟 <strong>¿Buscas inspiración para un proyecto con Astro?</strong><br/>
+He creado una guía completa con ideas de proyectos y un template inicial listo para usar.
+</p>
+
+<div align="left">
+  <a href="./PROYECTO_ASTRO.md">
+    <img src="https://img.shields.io/badge/Ver_Ideas_de_Proyectos-667eea?style=for-the-badge&logo=astro&logoColor=white" alt="Ideas de Proyectos Astro" />
+  </a>
+  <a href="./portfolio-astro">
+    <img src="https://img.shields.io/badge/Ver_Template-764ba2?style=for-the-badge&logo=astro&logoColor=white" alt="Template Astro" />
+  </a>
+</div>
+
+<details>
+<summary><strong>📦 Proyecto Incluido: Portfolio Colaborativo</strong></summary>
+
+<br/>
+
+Un template completo de portfolio construido con Astro, perfecto para trabajar en equipo:
+
+- ✅ **Diseño Moderno** con degradados y animaciones
+- ✅ **Componentes Reutilizables** (ProjectCard, Layout)
+- ✅ **100% Responsivo** y optimizado para SEO
+- ✅ **TypeScript** con tipado estricto
+- ✅ **Rendimiento Ultra Rápido** (sitio estático)
+
+**Para empezar:**
+```bash
+cd portfolio-astro
+npm install
+npm run dev
+```
+
+📖 Ver [guía completa de inicio](./portfolio-astro/GETTING_STARTED.md)
+
+</details>
+
+---
+
 <h3 align="left">📊 My Stats</h3>
 
 <p align="left">

@@ -1,0 +1,343 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+---
+
+<Layout title="Portfolio Colaborativo - Astro">
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>
+          🚀 Bienvenidos a Nuestro
+          <span class="text-gradient">Portfolio Colaborativo</span>
+        </h1>
+        <p class="hero-description">
+          Desarrolladores web apasionados por crear experiencias digitales increíbles.
+          Este es nuestro espacio para mostrar proyectos, compartir conocimiento y crecer juntos.
+        </p>
+        <div class="cta-buttons">
+          <a href="#proyectos" class="cta-primary">Ver Proyectos</a>
+          <a href="#contacto" class="cta-secondary">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre-nosotros">
+      <div class="container">
+        <h2>👨‍💻 Sobre Nosotros</h2>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>🎯 Nuestra Misión</h3>
+            <p>
+              Crear aplicaciones web modernas, accesibles y de alto rendimiento
+              que resuelvan problemas reales y mejoren la experiencia de los usuarios.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>💡 Nuestras Habilidades</h3>
+            <p>
+              Especializados en desarrollo frontend con React, backend con Node.js,
+              y diseño de interfaces intuitivas. Siempre aprendiendo nuevas tecnologías.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>🚀 Nuestro Enfoque</h3>
+            <p>
+              Código limpio, mejores prácticas, trabajo en equipo y entrega de
+              soluciones que combinan funcionalidad con excelente diseño.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="proyectos">
+      <div class="container">
+        <h2>💼 Nuestros Proyectos</h2>
+        <div class="projects-grid">
+          <ProjectCard
+            title="Portfolio con Astro"
+            description="Un sitio web moderno construido con Astro, optimizado para rendimiento y SEO."
+            technologies={['Astro', 'TypeScript', 'CSS']}
+          />
+          <ProjectCard
+            title="Blog Técnico"
+            description="Plataforma de blog para compartir artículos sobre desarrollo web y tecnología."
+            technologies={['Astro', 'MDX', 'React']}
+          />
+          <ProjectCard
+            title="Dashboard Interactivo"
+            description="Aplicación de gestión de proyectos con interfaz intuitiva y funcionalidades avanzadas."
+            technologies={['React', 'Node.js', 'MongoDB']}
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="tech-stack">
+      <div class="container">
+        <h2>🛠️ Tecnologías que Usamos</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <span class="tech-icon">⚛️</span>
+            <span>React</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">🚀</span>
+            <span>Astro</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">📘</span>
+            <span>TypeScript</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">🟢</span>
+            <span>Node.js</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">🎨</span>
+            <span>CSS/Tailwind</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">🗃️</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+        <h2>📧 Contáctanos</h2>
+        <p class="contact-description">
+          ¿Tienes un proyecto en mente? ¡Nos encantaría escucharte!
+        </p>
+        <div class="contact-info">
+          <a href="mailto:contact@example.com" class="contact-button">
+            Enviar Email
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-button">
+            Ver en GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Construido con ❤️ usando Astro | © 2026 Portfolio Colaborativo</p>
+      </div>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  main {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .hero {
+    padding: 6rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+    display: inline-block;
+  }
+
+  .hero-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .cta-primary {
+    background: white;
+    color: #667eea;
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .cta-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+  }
+
+  .cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .about,
+  .projects,
+  .tech-stack,
+  .contact {
+    padding: 4rem 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .about-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .about-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .about-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(var(--accent-light));
+  }
+
+  .about-card p {
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .tech-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+  }
+
+  .tech-icon {
+    font-size: 2.5rem;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .contact-info {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-button {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+  }
+
+  .contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+  }
+
+  footer {
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero-description {
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+</style>
